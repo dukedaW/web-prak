@@ -1,7 +1,10 @@
 # Складской учет
 
-## База Данных
-![изображение](https://user-images.githubusercontent.com/120986355/226136899-2311b82d-3099-4541-be68-4222cfad6597.png)
+## Схема Базы Данных
+![изображение](https://github.com/dukedaW/web-prak/blob/main/ER_DIAGRAM.png)
+
+## Схема Базы Данных Сгенерированная IDEA
+![изображение](https://github.com/dukedaW/web-prak/blob/main/ER_IDEA_GENERATED.png)
 
 ## Схема страниц
 ![изображение](https://user-images.githubusercontent.com/120986355/226137038-943a3019-7014-40b7-9898-0377e407cd79.png)

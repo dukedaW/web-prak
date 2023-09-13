@@ -1,0 +1,10 @@
+DROP TRIGGER IF EXISTS tr_insert ON product_instance;
+DROP TRIGGER IF EXISTS tr_delete ON product_instance;
+drop table product_instance;
+drop table storage;
+drop table orders;
+drop table supply;
+drop table product;
+drop table client;
+drop table provider;
+drop table category;

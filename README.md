@@ -17,4 +17,4 @@
     Добавление и удаление поставщиков и потребителей, чтение и редактирование данных о них
 
 ## Результаты 2 этапа
-![изображение](<img width="849" alt="Снимок экрана 2023-09-13 в 15 56 28" src="https://github.com/dukedaW/web-prak/assets/120986355/859260b1-4e3b-4e26-b427-8dbd5a035e64">)
+![изображение]([<img width="849" alt="Снимок экрана 2023-09-13 в 15 56 28" src="https://github.com/dukedaW/web-prak/assets/120986355/859260b1-4e3b-4e26-b427-8dbd5a035e64">](https://github.com/dukedaW/web-prak/blob/main/second_task_res.png)https://github.com/dukedaW/web-prak/blob/main/second_task_res.png)

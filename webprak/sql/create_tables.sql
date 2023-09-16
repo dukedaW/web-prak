@@ -1,11 +1,11 @@
 CREATE TABLE category (
-	category_id int PRIMARY KEY,
+	category_id serial PRIMARY KEY,
 	name varchar(30) NOT NULL,
 	description text 
 );
 
 CREATE TABLE provider (
-	provider_id int PRIMARY KEY,
+	provider_id serial PRIMARY KEY,
 	name varchar(30) NOT NULL,
 	phone varchar(13),
 	description text,
@@ -13,7 +13,7 @@ CREATE TABLE provider (
 );
 
 CREATE TABLE client (
-	client_id int PRIMARY KEY,
+	client_id serial PRIMARY KEY,
 	name varchar(30) NOT NULL,
 	phone varchar(13) NOT NULL,
 	description text,
@@ -21,38 +21,38 @@ CREATE TABLE client (
 );
 
 CREATE TABLE product (
-	product_id int PRIMARY KEY,
+	product_id serial PRIMARY KEY,
 	name varchar(30) NOT NULL,
 	description text,
 	category_id int REFERENCES category (category_id)
 );
 
 CREATE TABLE supply (
-	supply_id int PRIMARY KEY,
+	supply_id serial PRIMARY KEY,
 	provider_id int REFERENCES provider (provider_id),
 	product_id int REFERENCES product (product_id),
 	amount real,
 	arrival_time timestamp,
-	has_arrived bool NOT NULL
+	has_arrived bool
 );
 
 CREATE TABLE orders (
-	order_id int PRIMARY KEY,
+	order_id serial PRIMARY KEY,
 	client_id int REFERENCES client (client_id),
 	product_id int REFERENCES product (product_id),
 	amount real,
 	departure_date timestamp,
-	has_departed bool NOT NULL
+	has_departed bool
 );
 
 CREATE TABLE storage (
-	storage_id int PRIMARY KEY,
+	storage_id serial PRIMARY KEY,
 	storage_type varchar(30) NOT NULL,
 	free_space int NOT NULL
 );
 
 CREATE TABLE product_instance (
-	instance_id int PRIMARY KEY,
+	instance_id serial PRIMARY KEY,
 	product_id int REFERENCES product (product_id),
 	amount real,
 	arrival_date timestamp,

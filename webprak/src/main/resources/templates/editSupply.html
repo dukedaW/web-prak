@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>Редактировать поставку</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style>
+        .indent {
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div th:replace="general :: page-header"> </div>
+
+<div class="indent">
+    <form method="post" action="/saveSupply">
+
+        <label for="supplyId">ID:               </label>
+        <input type="text" id="supplyId" name="supplyId" required th:value="${supply.getId()}"><br><br>
+
+        <label for="supplyDateTime">Дата:               </label>
+        <input type="date" id="supplyDateTime" name="supplyDateTime" required th:value="${supply.getArrival_time()}"><br><br>
+
+        <p th:if="${supply.getArrival_time() != null}" th:text="'Планируемая ранее дата: ' + ${supply.getArrival_time()}"></p><br>
+
+        <label for="supplySellerName">Поставщик:          </label>
+        <input type="text" id="supplySellerName" name="supplySellerName" required th:value="${supply.getProviderName()}"><br><br>
+
+        <label for="supplyProductName">Продукты:          </label>
+        <input type="text" id="supplyProductName" name="supplyProductName" required th:value="${supply.getProductName()}"><br><br>
+
+        <label for="supplyAmount">Кол-во:          </label>
+        <input type="text" step="any" id="supplyAmount" name="supplyAmount" required th:value="${supply.getAmount()}"><br><br>
+
+        <label for="supplyArrived">Статус:          </label>
+        <input type="checkbox" id="supplyArrived" name="supplyArrived" th:value="${supply.getHas_arrived()}"><br><br>
+
+        <input id="submitButton" type="submit" value="Сохранить" class="btn btn-primary">
+    </form>
+</div>
+
+<div th:replace="general :: site-footer"></div>
+<div th:replace="general :: site-script"></div>
+
+</body>
+</html>

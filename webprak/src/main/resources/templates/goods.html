@@ -1,0 +1,107 @@
+
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>Товары</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style>
+        .indent {
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div th:replace="general :: page-header"> </div>
+
+<div class="indent">
+    <form method="get" action="/editGood">
+        <button id="addGoodButton" type="submit" class="btn btn-primary">Добавить товар</button>
+    </form>
+
+    <br>
+
+    <form method="get" action="/searchGood">
+        <div class="form-row">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Название" name="goodProductName">
+            </div>
+
+            <div class="col">
+                <input type="number" class="form-control" placeholder="Кол-во" name="goodAmount">
+            </div>
+
+            <div class="col">
+                <input type="date" class="form-control" placeholder="Мин. Дата прибытия" name="goodArrivalDateLo">
+            </div>
+
+            <div class="col">
+                <input type="date" class="form-control" placeholder="Макс. Дата прибытия" name="goodArrivalDateHi">
+            </div>
+
+            <div class="col">
+                <input type="date" class="form-control" placeholder="Мин. Срок годности" name="goodExparationDateLo">
+            </div>
+
+            <div class="col">
+                <input type="date" class="form-control" placeholder="Макс. Срок годности" name="goodExparationDateHi">
+            </div>
+
+            <div class="col">
+                <input type="number" class="form-control" placeholder="ID поставки" name="goodSupplyId">
+            </div>
+
+            <div class="col">
+                <input type="number" class="form-control" placeholder="ID заказа" name="goodOrderId">
+            </div>
+
+            <div class="col">
+                <input type="number" class="form-control" placeholder="ID хранилища" name="goodStorageId">
+            </div>
+
+
+            <div class="col">
+                <button type="submit" class="btn btn-primary">Поиск</button>
+            </div>
+        </div>
+    </form>
+
+    <br>
+
+    <table class="table table-bordered table-warning">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">Имя</th>
+            <th scope="col">Кол-во</th>
+            <th scope="col">Тип</th>
+            <th scope="col">Срок годности</th>
+            <th scope="col">Дата прибытия</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:if="${goods.isEmpty()}">
+            <td colspan="3"> В базе пока нет ни одного товара. <a href="/editGood">Необходимо добавить</a></td>
+        </tr>
+        <tr th:each="good : ${goods}">
+            <td><a th:href="'/good?goodId=' + ${good.getId()}"><span
+                    th:text="${good.getProduct().getName()}"></span></a></td>
+            <td><span
+                    th:text="${good.getAmount()}"></span></td>
+            <td><span
+                    th:text="${good.getProduct().getCategory().getName()}"></span></td>
+            <td><span
+                    th:text="${good.getExparation_date()}"></span></td>
+            <td><span
+                    th:text="${good.getArrival_date()}"></span></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div th:replace="general :: site-script"></div>
+
+</body>
+</html>

@@ -11,12 +11,13 @@ import java.util.Date;
 @Setter
 @ToString
 @NoArgsConstructor
-//@RequiredArgsConstructor
+@RequiredArgsConstructor
 @AllArgsConstructor
 public class Supply implements CommonEntity<Long> {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false, name = "supply_id")
+    @NonNull
     private Long id;
 
     @ManyToOne
@@ -27,15 +28,38 @@ public class Supply implements CommonEntity<Long> {
     @JoinColumn(name = "product_id")
     private Product product;
 
-    @Column(nullable = false, name = "amount")
-    private float amount;
+    @Column(name = "amount")
+    private Float amount;
 
     @Temporal(TemporalType.TIMESTAMP)
-    @Column(nullable = false, name = "arrival_time")
+    @Column(name = "arrival_time")
     private Date arrival_time;
 
-    @Column(nullable = false, name = "has_arrived")
+    @Column(name = "has_arrived")
     private Boolean has_arrived;
+
+    public String getProductName() {
+        if (this.getProduct() != null) {
+            return this.getProduct().getName();
+        }
+
+        return null;
+    }
+
+    public String getProviderName() {
+        if (this.getProvider() != null) {
+            return this.getProvider().getName();
+        }
+
+        return null;
+    }
+
+    public Long getProviderId() {
+        if (this.getProvider() != null) {
+            return this.getProvider().getId();
+        }
+        return null;
+    }
 
     @Override
     public boolean equals(Object obj) {

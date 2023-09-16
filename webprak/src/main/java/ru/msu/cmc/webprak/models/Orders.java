@@ -34,10 +34,26 @@ public class Orders implements CommonEntity<Long> {
     private Product product;
 
     @Column(nullable = true, name = "amount")
-    private float amount;
+    private Float amount;
 
-    @Column(nullable = false, name = "has_departed")
-    private boolean has_departed;
+    @Column(nullable = true, name = "has_departed")
+    private Boolean has_departed;
+
+    public String getProductName() {
+        if (this.getProduct() != null) {
+            return this.getProduct().getName();
+        }
+
+        return null;
+    }
+
+    public String getClientName() {
+        if (this.getClient() != null) {
+            return this.getClient().getName();
+        }
+
+        return null;
+    }
 
     @Override
     public boolean equals(Object obj) {

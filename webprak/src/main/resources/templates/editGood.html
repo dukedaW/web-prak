@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>Редактировать товар</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style>
+        .indent {
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div th:replace="general :: page-header"> </div>
+
+<div class="indent">
+    <form method="post" action="/saveGood">
+        <label for="goodId">ID:               </label>
+        <input type="text" id="goodId" name="goodId" required th:value="${good.getId()}"><br><br>
+
+        <label for="goodProductName">Имя:               </label>
+        <input type="text" id="goodProductName" name="goodProductName" required th:value="${good.getProductName()}"><br><br>
+
+        <label for="goodAmount">Кол-во:               </label>
+        <input type="text" id="goodAmount" name="goodAmount" required th:value="${good.getAmount()}"><br><br>
+
+        <label for="goodArrivalDate">Дата прибытия:             </label>
+        <input type="date" id="goodArrivalDate" name="goodArrivalDate"  th:value="${good.getArrival_date()}"><br><br>
+
+        <label for="goodExparationDate">Срок хранения:             </label>
+        <input type="date" id="goodExparationDate" name="goodExparationDate"  th:value="${good.getExparation_date()}"><br><br>
+
+        <label for="goodSupplyId">ID поставки:             </label>
+        <input type="text" id="goodSupplyId" name="goodSupplyId"  th:value="${good.getSupplyId()}"><br><br>
+
+        <label for="goodOrderId">ID заказа:             </label>
+        <input type="text" id="goodOrderId" name="goodOrderId"  th:value="${good.getOrderId()}"><br><br>
+
+        <label for="goodStorageId">ID хранилища:             </label>
+        <input type="text" id="goodStorageId" name="goodStorageId"  th:value="${good.getStorageId()}"><br><br>
+
+
+        <input id="submitButton" type="submit" value="Сохранить" class="btn btn-primary">
+    </form>
+</div>
+
+<div th:replace="general :: site-footer"></div>
+<div th:replace="general :: site-script"></div>
+
+</body>
+</html>

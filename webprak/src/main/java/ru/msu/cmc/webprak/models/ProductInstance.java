@@ -46,6 +46,35 @@ public class ProductInstance implements CommonEntity<Long> {
     @JoinColumn(name = "storage_id")
     private Storage storage;
 
+
+    public String getProductName() {
+        if (this.getProduct() != null) {
+            return this.getProduct().getName();
+        }
+        return null;
+    }
+
+    public Long getSupplyId() {
+        if (this.getSupply() != null) {
+            return this.getSupply().getId();
+        }
+        return null;
+    }
+
+    public Long getOrderId() {
+        if (this.getOrders()!=null) {
+            return this.getOrders().getId();
+        }
+        return null;
+    }
+
+    public Long getStorageId() {
+        if (this.getStorage() != null) {
+            return this.getStorage().getId();
+        }
+        return null;
+    }
+
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;

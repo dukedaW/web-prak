@@ -1,0 +1,100 @@
+
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>Поставки</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style>
+        .indent {
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div th:replace="general :: page-header"> </div>
+
+<div class="indent">
+    <form method="get" action="/editSupply">
+        <button id="addSupplyButton" type="submit" class="btn btn-primary">Оформить поставку</button>
+    </form>
+
+    <br>
+
+    <form method="get" action="/searchSupply">
+        <div class="form-row">
+
+            <div class="col">
+                <input type="text" class="form-control" required placeholder="Имя поставщика" name="sellerName">
+            </div>
+
+            <div class="col">
+                <input type="text" class="form-control"  placeholder="Имя продукта" name="productName">
+            </div>
+
+            <div class="col">
+                <input type="date" class="form-control"  placeholder="Начало" name="dateLo">
+            </div>
+            <div class="col">
+                <input type="date" class="form-control"  placeholder="Конец" name="dateHi">
+            </div>
+
+            <div class="col">
+                <input type="number" class="form-control"  placeholder="Мин" name="amountLo">
+            </div>
+
+            <div class="col">
+                <input type="number" class="form-control"  placeholder="Макс" name="amountHi">
+            </div>
+
+
+            <div class="col">
+                <button type="submit" class="btn btn-primary">Поиск</button>
+            </div>
+        </div>
+    </form>
+
+    <br>
+
+    <table class="table table-bordered table-warning">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">ID поставки</th>
+            <th scope="col">Дата</th>
+            <th scope="col">Продукты</th>
+            <th scope="col">Поставщик</th>
+            <th scope="col">Кол-во</th>
+            <th scope="col">Статус</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:if="${supplies.isEmpty()}">
+            <td colspan="3"> В базе пока нет ни одной поставки. <a href="/editSupply">Необходимо добавить</a></td>
+        </tr>
+        <tr th:each="supply : ${supplies}">
+            <td><a th:href="'/supply?supplyId=' + ${supply.getId()}"><span
+                    th:text="${supply.getId()}"></span></a></td>
+            <td><span
+                    th:text="${supply.getArrival_time()}"></span></td>
+            <td><span
+                    th:text="${supply.getProductName()}"></span></td>
+
+            <td><a th:href="'/seller?sellerId=' + ${supply.getProviderId()}"><span
+                    th:text="${supply.getProviderName()}"></span></a></td>
+            <td><span
+                    th:text="${supply.getAmount()}"></span></td>
+            <td><span
+                    th:text="${supply.getHas_arrived()}"></span></td>
+
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div th:replace="general :: site-script"></div>
+
+</body>
+</html>

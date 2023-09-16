@@ -61,7 +61,7 @@ public class OrdersDAOTest {
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MMM-dd", Locale.ENGLISH);
         try {
             departureLo = formatter.parse("2020-Jan-01");
-            departureHi = formatter.parse("2020-Jun-01");
+            departureHi = formatter.parse("2020-Jan-01");
         } catch (ParseException e) {
             throw new RuntimeException(e);
         }

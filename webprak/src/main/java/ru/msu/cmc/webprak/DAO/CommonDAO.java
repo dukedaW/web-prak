@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.stereotype.Component;
 import ru.msu.cmc.webprak.models.CommonEntity;
+
+import java.io.Serializable;
 import java.util.Collection;
 
 public class CommonDAO<T extends CommonEntity<ID>, ID> {
@@ -25,7 +27,7 @@ public class CommonDAO<T extends CommonEntity<ID>, ID> {
 
     public T getById(ID id) {
         try (Session session = sessionFactory.openSession()) {
-            return session.get(persistentClass, id);
+            return session.get(persistentClass,  id);
         }
     }
 

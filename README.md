@@ -7,7 +7,7 @@
 ![изображение](https://github.com/dukedaW/web-prak/blob/main/ER_IDEA_GENERATED.png)
 
 ## Схема страниц
-![изображение](https://user-images.githubusercontent.com/120986355/226137038-943a3019-7014-40b7-9898-0377e407cd79.png)
+![изображение](https://github.com/dukedaW/web-prak/blob/main/pages.png)
 
 ## Сценарии использования
 

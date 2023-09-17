@@ -21,3 +21,8 @@
 
 ## Результаты 2 этапа
 [<img width="849" alt="Снимок экрана 2023-09-13 в 15 56 28" src="https://github.com/dukedaW/web-prak/assets/120986355/859260b1-4e3b-4e26-b427-8dbd5a035e64">](https://github.com/dukedaW/web-prak/blob/main/second_task_res.png)
+
+## Результаты 3 этапа
+![изображение] (https://github.com/dukedaW/web-prak/blob/main/Selenium1.png)
+![изображение] (https://github.com/dukedaW/web-prak/blob/main/selenium2.png)
+Selenium тесты находятся в папке selenium.

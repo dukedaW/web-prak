@@ -1,0 +1,442 @@
+{
+  "id": "14a1b7a0-3f8a-468b-a990-054b2003be3c",
+  "version": "2.0",
+  "name": "sellersSelenium",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "d80268a8-6754-4e7a-8b8d-71000549616a",
+    "name": "providerSeleniumTest",
+    "commands": [{
+      "id": "9fcca8b4-111f-425d-8b90-8b77a86acdb0",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "39308b03-e75b-4fac-98ed-1bac5fe2035d",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Главная страница",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "498f969f-566c-4fc9-9f75-141ca6cb9871",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x954",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "01e91613-d19d-460f-bc20-f9175370ad67",
+      "comment": "",
+      "command": "click",
+      "target": "id=sellersLink",
+      "targets": [
+        ["id=sellersLink", "id"],
+        ["linkText=Поставщики", "linkText"],
+        ["css=#sellersLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Поставщики')]", "xpath:link"],
+        ["xpath=//a[@id='sellersLink']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'sellers')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Поставщики')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "174b5b09-bbc8-4287-9c37-3765cebbc52f",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Поставщики",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ddcf3558-dcfa-46ff-811d-eec2213f2e7f",
+      "comment": "",
+      "command": "click",
+      "target": "id=addSellerButton",
+      "targets": [
+        ["id=addSellerButton", "id"],
+        ["css=#addSellerButton", "css:finder"],
+        ["xpath=//button[@id='addSellerButton']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Добавить поставщика')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f70ecab-762a-4312-aa8f-2278d1f25610",
+      "comment": "",
+      "command": "click",
+      "target": "id=sellerId",
+      "targets": [
+        ["id=sellerId", "id"],
+        ["name=sellerId", "name"],
+        ["css=#sellerId", "css:finder"],
+        ["xpath=//input[@id='sellerId']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4cc7f687-87fe-46eb-b78c-471735153c72",
+      "comment": "",
+      "command": "type",
+      "target": "id=sellerId",
+      "targets": [
+        ["id=sellerId", "id"],
+        ["name=sellerId", "name"],
+        ["css=#sellerId", "css:finder"],
+        ["xpath=//input[@id='sellerId']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "3"
+    }, {
+      "id": "7fb91dc2-4be1-4eb5-8734-21a5b19eef4b",
+      "comment": "",
+      "command": "click",
+      "target": "id=sellerName",
+      "targets": [
+        ["id=sellerName", "id"],
+        ["name=sellerName", "name"],
+        ["css=#sellerName", "css:finder"],
+        ["xpath=//input[@id='sellerName']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0f3ecaf-4465-4256-9830-b201277cbeb4",
+      "comment": "",
+      "command": "type",
+      "target": "id=sellerName",
+      "targets": [
+        ["id=sellerName", "id"],
+        ["name=sellerName", "name"],
+        ["css=#sellerName", "css:finder"],
+        ["xpath=//input[@id='sellerName']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "kate"
+    }, {
+      "id": "589f035d-eb01-4ec7-a710-c95602510fcc",
+      "comment": "",
+      "command": "click",
+      "target": "id=sellerDescription",
+      "targets": [
+        ["id=sellerDescription", "id"],
+        ["name=sellerDescription", "name"],
+        ["css=#sellerDescription", "css:finder"],
+        ["xpath=//input[@id='sellerDescription']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "636a3b8c-2f24-4bd4-a0ac-89eefd8d8b0d",
+      "comment": "",
+      "command": "type",
+      "target": "id=sellerDescription",
+      "targets": [
+        ["id=sellerDescription", "id"],
+        ["name=sellerDescription", "name"],
+        ["css=#sellerDescription", "css:finder"],
+        ["xpath=//input[@id='sellerDescription']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "kate"
+    }, {
+      "id": "6c2ceb85-675c-49aa-aa45-18994c89cbf1",
+      "comment": "",
+      "command": "click",
+      "target": "id=sellerPhone",
+      "targets": [
+        ["id=sellerPhone", "id"],
+        ["name=sellerPhone", "name"],
+        ["css=#sellerPhone", "css:finder"],
+        ["xpath=//input[@id='sellerPhone']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa7556a2-a7cf-4966-9ff3-15095b49baab",
+      "comment": "",
+      "command": "type",
+      "target": "id=sellerPhone",
+      "targets": [
+        ["id=sellerPhone", "id"],
+        ["name=sellerPhone", "name"],
+        ["css=#sellerPhone", "css:finder"],
+        ["xpath=//input[@id='sellerPhone']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "kate"
+    }, {
+      "id": "d9c76e95-be23-4c69-9e49-c17744b7dd8c",
+      "comment": "",
+      "command": "click",
+      "target": "id=sellerAddress",
+      "targets": [
+        ["id=sellerAddress", "id"],
+        ["name=sellerAddress", "name"],
+        ["css=#sellerAddress", "css:finder"],
+        ["xpath=//input[@id='sellerAddress']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a40788b4-35b1-41b3-af56-58ff1558117c",
+      "comment": "",
+      "command": "type",
+      "target": "id=sellerAddress",
+      "targets": [
+        ["id=sellerAddress", "id"],
+        ["name=sellerAddress", "name"],
+        ["css=#sellerAddress", "css:finder"],
+        ["xpath=//input[@id='sellerAddress']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "kate"
+    }, {
+      "id": "7390a0fa-ad33-49a0-8850-54f38897c12d",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitButton",
+      "targets": [
+        ["id=submitButton", "id"],
+        ["css=#submitButton", "css:finder"],
+        ["xpath=//input[@id='submitButton']", "xpath:attributes"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ace46d6e-a844-4ac5-ad6c-e3413f074179",
+      "comment": "",
+      "command": "click",
+      "target": "id=sellersLink",
+      "targets": [
+        ["id=sellersLink", "id"],
+        ["linkText=Поставщики", "linkText"],
+        ["css=#sellersLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Поставщики')]", "xpath:link"],
+        ["xpath=//a[@id='sellersLink']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'sellers')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Поставщики')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "497cc940-096e-41a1-8655-093bbc126704",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) a > span",
+      "targets": [
+        ["css=tr:nth-child(4) a > span", "css:finder"],
+        ["xpath=//tr[4]/td/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'kate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7f48f7b-2b12-42fa-aeed-652e40c809ab",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h4",
+      "targets": [
+        ["css=h4", "css:finder"],
+        ["xpath=//div[@id='sellerInfo']/h4", "xpath:idRelative"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Electronics provider')]", "xpath:innerText"]
+      ],
+      "value": "kate"
+    }, {
+      "id": "7a9ba003-b44e-429c-b9ab-24ab1d7e5e3c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(3)",
+      "targets": [
+        ["css=p:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='sellerInfo']/p[2]", "xpath:idRelative"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Адрес: Mike street, 8')]", "xpath:innerText"]
+      ],
+      "value": "Адрес: kate"
+    }, {
+      "id": "c0fa4a97-76a1-4096-b5cd-1615dca54357",
+      "comment": "",
+      "command": "click",
+      "target": "id=editButton",
+      "targets": [
+        ["id=editButton", "id"],
+        ["css=#editButton", "css:finder"],
+        ["xpath=//button[@id='editButton']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Редактировать информацию о поставщике')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9bece394-b11c-42d6-9ccb-f88f7d6952e0",
+      "comment": "",
+      "command": "click",
+      "target": "id=sellerAddress",
+      "targets": [
+        ["id=sellerAddress", "id"],
+        ["name=sellerAddress", "name"],
+        ["css=#sellerAddress", "css:finder"],
+        ["xpath=//input[@id='sellerAddress']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "028386cb-19b9-4a06-ab79-08e4ccd5c53d",
+      "comment": "",
+      "command": "type",
+      "target": "id=sellerAddress",
+      "targets": [
+        ["id=sellerAddress", "id"],
+        ["name=sellerAddress", "name"],
+        ["css=#sellerAddress", "css:finder"],
+        ["xpath=//input[@id='sellerAddress']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "kate, 1"
+    }, {
+      "id": "d9a9c7db-6ca3-4e78-9005-872efb58d6e5",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitButton",
+      "targets": [
+        ["id=submitButton", "id"],
+        ["css=#submitButton", "css:finder"],
+        ["xpath=//input[@id='submitButton']", "xpath:attributes"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "79ca1514-11e5-462a-a8c4-5cc9e9914caa",
+      "comment": "",
+      "command": "click",
+      "target": "id=sellersLink",
+      "targets": [
+        ["id=sellersLink", "id"],
+        ["linkText=Поставщики", "linkText"],
+        ["css=#sellersLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Поставщики')]", "xpath:link"],
+        ["xpath=//a[@id='sellersLink']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'sellers')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Поставщики')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0bf3e3a0-72d3-4385-84e6-cc979b4cf5ef",
+      "comment": "",
+      "command": "click",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "68a3e52b-8b7a-4f00-bff5-9ada66a7fa78",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "kate"
+    }, {
+      "id": "2f1033ac-c97a-42df-ad38-24ca8e07968e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col > .btn",
+      "targets": [
+        ["css=.col > .btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Поиск')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0aad28cc-d6fc-44bf-ae16-694d1cfd209c",
+      "comment": "",
+      "command": "click",
+      "target": "css=a > span",
+      "targets": [
+        ["css=a > span", "css:finder"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'kate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "04ccb989-0e0c-40cc-8119-95d887a140ff",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h4",
+      "targets": [
+        ["css=h4", "css:finder"],
+        ["xpath=//div[@id='sellerInfo']/h4", "xpath:idRelative"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Electronics provider')]", "xpath:innerText"]
+      ],
+      "value": "kate"
+    }, {
+      "id": "70067c8b-c53b-43e7-847a-45451bf06926",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(3)",
+      "targets": [
+        ["css=p:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='sellerInfo']/p[2]", "xpath:idRelative"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Адрес: Mike street, 8')]", "xpath:innerText"]
+      ],
+      "value": "Адрес: kate, 1"
+    }, {
+      "id": "3580185b-b062-4407-bd66-f8b30360f6c8",
+      "comment": "",
+      "command": "click",
+      "target": "id=deleteButton",
+      "targets": [
+        ["id=deleteButton", "id"],
+        ["css=#deleteButton", "css:finder"],
+        ["xpath=//button[@id='deleteButton']", "xpath:attributes"],
+        ["xpath=//form[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Удалить поставщика из базы')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "933317bb-d5b1-46d6-ad4d-20eebaddeb3d",
+      "comment": "",
+      "command": "click",
+      "target": "id=rootLink",
+      "targets": [
+        ["id=rootLink", "id"],
+        ["linkText=На главную", "linkText"],
+        ["css=#rootLink", "css:finder"],
+        ["xpath=//a[contains(text(),'На главную')]", "xpath:link"],
+        ["xpath=//a[@id='rootLink']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'На главную')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "45f00ebd-08ab-4b7e-be21-94e6c5c9932f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d80268a8-6754-4e7a-8b8d-71000549616a"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}

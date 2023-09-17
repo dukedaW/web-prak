@@ -1,0 +1,2027 @@
+{
+  "id": "319a7954-7281-44c5-a745-8d77b2d95031",
+  "version": "2.0",
+  "name": "webprakSelenium",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "38a7e055-2b97-4123-a36d-0d0c807b0d72",
+    "name": "clientsSelenium",
+    "commands": [{
+      "id": "ae59c156-d55a-4c91-ab97-67c7e2e856f8",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1299a407-0480-4ab1-b929-21c60a5f8007",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x954",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d7f88711-c925-44d2-98a5-99ce9293f56e",
+      "comment": "",
+      "command": "click",
+      "target": "id=clientsLink",
+      "targets": [
+        ["id=clientsLink", "id"],
+        ["linkText=Заказчики", "linkText"],
+        ["css=#clientsLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Заказчики')]", "xpath:link"],
+        ["xpath=//a[@id='clientsLink']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'clients')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Заказчики')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0e16024-9422-4111-8229-1449ac88cfca",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Покупатели",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "69bb70b3-90d3-4af4-8c28-1c190fd09ad3",
+      "comment": "",
+      "command": "click",
+      "target": "id=addClientButton",
+      "targets": [
+        ["id=addClientButton", "id"],
+        ["css=#addClientButton", "css:finder"],
+        ["xpath=//button[@id='addClientButton']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Добавить покупателя')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fed89f8f-d2bd-4795-aa36-faf133619f0d",
+      "comment": "",
+      "command": "click",
+      "target": "id=clientId",
+      "targets": [
+        ["id=clientId", "id"],
+        ["name=clientId", "name"],
+        ["css=#clientId", "css:finder"],
+        ["xpath=//input[@id='clientId']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d3fceb9-90c6-434e-9668-7e8ec958e514",
+      "comment": "",
+      "command": "type",
+      "target": "id=clientId",
+      "targets": [
+        ["id=clientId", "id"],
+        ["name=clientId", "name"],
+        ["css=#clientId", "css:finder"],
+        ["xpath=//input[@id='clientId']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "11"
+    }, {
+      "id": "80b95458-bdc2-4034-b750-b56e4aac390f",
+      "comment": "",
+      "command": "click",
+      "target": "css=form",
+      "targets": [
+        ["css=form", "css:finder"],
+        ["xpath=//form[@action='/saveClient']", "xpath:attributes"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b832f6a5-9c45-49b2-aa0d-6116e16174fa",
+      "comment": "",
+      "command": "click",
+      "target": "id=clientName",
+      "targets": [
+        ["id=clientName", "id"],
+        ["name=clientName", "name"],
+        ["css=#clientName", "css:finder"],
+        ["xpath=//input[@id='clientName']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6be5242c-b5ad-4be7-9dfb-8a9a9460463c",
+      "comment": "",
+      "command": "type",
+      "target": "id=clientName",
+      "targets": [
+        ["id=clientName", "id"],
+        ["name=clientName", "name"],
+        ["css=#clientName", "css:finder"],
+        ["xpath=//input[@id='clientName']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "kate"
+    }, {
+      "id": "c88f5366-2b48-463e-b969-15f298fd1d5d",
+      "comment": "",
+      "command": "click",
+      "target": "id=clientDescription",
+      "targets": [
+        ["id=clientDescription", "id"],
+        ["name=clientDescription", "name"],
+        ["css=#clientDescription", "css:finder"],
+        ["xpath=//input[@id='clientDescription']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1553b7d-aca7-4fa7-b032-8074e05ccc9c",
+      "comment": "",
+      "command": "type",
+      "target": "id=clientDescription",
+      "targets": [
+        ["id=clientDescription", "id"],
+        ["name=clientDescription", "name"],
+        ["css=#clientDescription", "css:finder"],
+        ["xpath=//input[@id='clientDescription']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "kate"
+    }, {
+      "id": "eefb53c9-a292-4b38-9cd5-11708e1de151",
+      "comment": "",
+      "command": "click",
+      "target": "id=clientPhone",
+      "targets": [
+        ["id=clientPhone", "id"],
+        ["name=clientPhone", "name"],
+        ["css=#clientPhone", "css:finder"],
+        ["xpath=//input[@id='clientPhone']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e392c5d-d496-4d0a-9a18-c3dde025aa42",
+      "comment": "",
+      "command": "type",
+      "target": "id=clientPhone",
+      "targets": [
+        ["id=clientPhone", "id"],
+        ["name=clientPhone", "name"],
+        ["css=#clientPhone", "css:finder"],
+        ["xpath=//input[@id='clientPhone']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "kate"
+    }, {
+      "id": "67043e6b-696b-4aa7-a25a-a6b03532f7d1",
+      "comment": "",
+      "command": "click",
+      "target": "id=clientAddress",
+      "targets": [
+        ["id=clientAddress", "id"],
+        ["name=clientAddress", "name"],
+        ["css=#clientAddress", "css:finder"],
+        ["xpath=//input[@id='clientAddress']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "96e21b64-b77b-479d-ae72-2d42d067b654",
+      "comment": "",
+      "command": "type",
+      "target": "id=clientAddress",
+      "targets": [
+        ["id=clientAddress", "id"],
+        ["name=clientAddress", "name"],
+        ["css=#clientAddress", "css:finder"],
+        ["xpath=//input[@id='clientAddress']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "kate"
+    }, {
+      "id": "1bd7cbeb-a464-4ee1-bb8f-38c45a2c831c",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3428c016-589f-41e6-8c8b-28979050747d",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitButton",
+      "targets": [
+        ["id=submitButton", "id"],
+        ["css=#submitButton", "css:finder"],
+        ["xpath=//input[@id='submitButton']", "xpath:attributes"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "70d5ea53-4394-45bf-9197-6b682ea86285",
+      "comment": "",
+      "command": "click",
+      "target": "id=clientsLink",
+      "targets": [
+        ["id=clientsLink", "id"],
+        ["linkText=Заказчики", "linkText"],
+        ["css=#clientsLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Заказчики')]", "xpath:link"],
+        ["xpath=//a[@id='clientsLink']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'clients')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Заказчики')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d37e8f90-8fc4-4705-a564-c2cf268c17f2",
+      "comment": "",
+      "command": "click",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5dc88a25-8e0a-4dcd-b469-527667ff664d",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "kate"
+    }, {
+      "id": "7ac81d97-091c-4bb7-925f-fcff86bf92b4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col > .btn",
+      "targets": [
+        ["css=.col > .btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Поиск')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "911c4a9d-297f-43e1-b92f-85195f9de059",
+      "comment": "",
+      "command": "click",
+      "target": "css=a > span",
+      "targets": [
+        ["css=a > span", "css:finder"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'kate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "303321ba-ca67-476c-adac-8361fc9e2a6f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h4",
+      "targets": [
+        ["css=h4", "css:finder"],
+        ["xpath=//div[@id='clientInfo']/h4", "xpath:idRelative"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'kate')]", "xpath:innerText"]
+      ],
+      "value": "kate"
+    }, {
+      "id": "e4664449-943d-4d65-ac47-1ec92deb917b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(2)",
+      "targets": [
+        ["css=p:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='clientInfo']/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Телефон: kate')]", "xpath:innerText"]
+      ],
+      "value": "Телефон: kate"
+    }, {
+      "id": "71fcb6bf-22d5-42b8-9143-759a9f6042a6",
+      "comment": "",
+      "command": "click",
+      "target": "id=editButton",
+      "targets": [
+        ["id=editButton", "id"],
+        ["css=#editButton", "css:finder"],
+        ["xpath=//button[@id='editButton']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Редактировать информацию о заказчике')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "27d47b8e-a4b0-4e32-9e85-16c6db568007",
+      "comment": "",
+      "command": "click",
+      "target": "id=clientPhone",
+      "targets": [
+        ["id=clientPhone", "id"],
+        ["name=clientPhone", "name"],
+        ["css=#clientPhone", "css:finder"],
+        ["xpath=//input[@id='clientPhone']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd7c8064-f52f-497a-b880-83d2fd2732fe",
+      "comment": "",
+      "command": "type",
+      "target": "id=clientPhone",
+      "targets": [
+        ["id=clientPhone", "id"],
+        ["name=clientPhone", "name"],
+        ["css=#clientPhone", "css:finder"],
+        ["xpath=//input[@id='clientPhone']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "903"
+    }, {
+      "id": "cda15f01-41f8-49a1-93d3-7024658287db",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "61c5c341-416a-49b9-8162-884078864470",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitButton",
+      "targets": [
+        ["id=submitButton", "id"],
+        ["css=#submitButton", "css:finder"],
+        ["xpath=//input[@id='submitButton']", "xpath:attributes"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c989e3a-a278-4c68-8351-9d40d06731d5",
+      "comment": "",
+      "command": "click",
+      "target": "id=clientsLink",
+      "targets": [
+        ["id=clientsLink", "id"],
+        ["linkText=Заказчики", "linkText"],
+        ["css=#clientsLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Заказчики')]", "xpath:link"],
+        ["xpath=//a[@id='clientsLink']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'clients')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Заказчики')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e03c0fa8-f930-418e-a5da-4cc4329136c2",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) a > span",
+      "targets": [
+        ["css=tr:nth-child(3) a > span", "css:finder"],
+        ["xpath=//tr[3]/td/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'kate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a0a9d56-5631-4d6c-b86b-70dda83e1072",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(2)",
+      "targets": [
+        ["css=p:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='clientInfo']/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Телефон: kate')]", "xpath:innerText"]
+      ],
+      "value": "Телефон: 903"
+    }, {
+      "id": "dfe67b67-2483-46ac-8f5c-c4496ac5ba32",
+      "comment": "",
+      "command": "click",
+      "target": "id=deleteButton",
+      "targets": [
+        ["id=deleteButton", "id"],
+        ["css=#deleteButton", "css:finder"],
+        ["xpath=//button[@id='deleteButton']", "xpath:attributes"],
+        ["xpath=//form[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Удалить заказчика из базы')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1dfd815-7d5d-4e9e-8b1c-c8b27a77a2b1",
+      "comment": "",
+      "command": "click",
+      "target": "id=rootLink",
+      "targets": [
+        ["id=rootLink", "id"],
+        ["linkText=На главную", "linkText"],
+        ["css=#rootLink", "css:finder"],
+        ["xpath=//a[contains(text(),'На главную')]", "xpath:link"],
+        ["xpath=//a[@id='rootLink']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'На главную')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1f475d8-28d7-4146-aa82-0936ab858bbb",
+      "comment": "",
+      "command": "click",
+      "target": "id=sellersLink",
+      "targets": [
+        ["id=sellersLink", "id"],
+        ["linkText=Поставщики", "linkText"],
+        ["css=#sellersLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Поставщики')]", "xpath:link"],
+        ["xpath=//a[@id='sellersLink']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'sellers')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Поставщики')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f255725-6f08-48c5-a857-4daca59939ca",
+      "comment": "",
+      "command": "click",
+      "target": "id=clientsLink",
+      "targets": [
+        ["id=clientsLink", "id"],
+        ["linkText=Заказчики", "linkText"],
+        ["css=#clientsLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Заказчики')]", "xpath:link"],
+        ["xpath=//a[@id='clientsLink']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'clients')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Заказчики')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5b52d32-e448-4c9c-b6fe-18edf212628b",
+      "comment": "",
+      "command": "click",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "799cb33f-aa83-4d22-9a22-8bbd328d720c",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "kate"
+    }, {
+      "id": "013461cd-f15a-40b5-ba88-13882e8f77bb",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }, {
+    "id": "4483a653-7fb5-4e02-9e0e-bc52057be215",
+    "name": "storageSelenium",
+    "commands": [{
+      "id": "2bee0dad-c5f2-42a1-88fe-5abbe23433bf",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e7c53886-b28f-4382-8196-c626febb89da",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1728x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ff4d8815-b685-4961-968d-a32976fedfe1",
+      "comment": "",
+      "command": "click",
+      "target": "id=storageLink",
+      "targets": [
+        ["id=storageLink", "id"],
+        ["linkText=Состояние склада", "linkText"],
+        ["css=#storageLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Состояние склада')]", "xpath:link"],
+        ["xpath=//a[@id='storageLink']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'storages')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Состояние склада')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e06f297b-e4bd-4e71-a818-cdaf37cbb58d",
+      "comment": "",
+      "command": "click",
+      "target": "id=addStorageButton",
+      "targets": [
+        ["id=addStorageButton", "id"],
+        ["css=#addStorageButton", "css:finder"],
+        ["xpath=//button[@id='addStorageButton']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Добавить новое хранилище')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "09e13669-df07-4c84-b607-f01580847a8a",
+      "comment": "",
+      "command": "click",
+      "target": "id=storageId",
+      "targets": [
+        ["id=storageId", "id"],
+        ["name=storageId", "name"],
+        ["css=#storageId", "css:finder"],
+        ["xpath=//input[@id='storageId']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "25e55295-96e7-438c-a3f5-d2dedad7c104",
+      "comment": "",
+      "command": "type",
+      "target": "id=storageId",
+      "targets": [
+        ["id=storageId", "id"],
+        ["name=storageId", "name"],
+        ["css=#storageId", "css:finder"],
+        ["xpath=//input[@id='storageId']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "111"
+    }, {
+      "id": "b4fe532c-940f-43d7-8b53-81afbf8d0d7e",
+      "comment": "",
+      "command": "click",
+      "target": "id=storageType",
+      "targets": [
+        ["id=storageType", "id"],
+        ["name=storageType", "name"],
+        ["css=#storageType", "css:finder"],
+        ["xpath=//input[@id='storageType']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "41edccbe-3c53-433f-82bd-15594719f5b1",
+      "comment": "",
+      "command": "type",
+      "target": "id=storageType",
+      "targets": [
+        ["id=storageType", "id"],
+        ["name=storageType", "name"],
+        ["css=#storageType", "css:finder"],
+        ["xpath=//input[@id='storageType']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "parking lot"
+    }, {
+      "id": "c0bae2af-34b0-4d64-89c1-fd0930e53414",
+      "comment": "",
+      "command": "click",
+      "target": "id=storageFreeSpace",
+      "targets": [
+        ["id=storageFreeSpace", "id"],
+        ["name=storageFreeSpace", "name"],
+        ["css=#storageFreeSpace", "css:finder"],
+        ["xpath=//input[@id='storageFreeSpace']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "80e0c51f-09d5-4961-8276-11ea4d810793",
+      "comment": "",
+      "command": "type",
+      "target": "id=storageFreeSpace",
+      "targets": [
+        ["id=storageFreeSpace", "id"],
+        ["name=storageFreeSpace", "name"],
+        ["css=#storageFreeSpace", "css:finder"],
+        ["xpath=//input[@id='storageFreeSpace']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "100"
+    }, {
+      "id": "7c64cb57-093e-4132-ba89-4312b2651356",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitButton",
+      "targets": [
+        ["id=submitButton", "id"],
+        ["css=#submitButton", "css:finder"],
+        ["xpath=//input[@id='submitButton']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "945ff844-9b4c-46ab-b0c9-15a447d1d21e",
+      "comment": "",
+      "command": "click",
+      "target": "id=storageLink",
+      "targets": [
+        ["id=storageLink", "id"],
+        ["linkText=Состояние склада", "linkText"],
+        ["css=#storageLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Состояние склада')]", "xpath:link"],
+        ["xpath=//a[@id='storageLink']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'storages')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Состояние склада')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4689894e-3303-4e5c-9927-fda1b014c719",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) a > span",
+      "targets": [
+        ["css=tr:nth-child(4) a > span", "css:finder"],
+        ["xpath=//tr[4]/td/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6665fe72-546d-462f-89cc-7df57cf4ead5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(2)",
+      "targets": [
+        ["css=p:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='storageInfo']/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Тип хранилища: parking space')]", "xpath:innerText"]
+      ],
+      "value": "Тип хранилища: parking lot"
+    }, {
+      "id": "3e139612-9801-4ee9-8fda-4af040aef487",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(3)",
+      "targets": [
+        ["css=p:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='storageInfo']/p[2]", "xpath:idRelative"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Свободное место: 99')]", "xpath:innerText"]
+      ],
+      "value": "Свободное место: 100"
+    }, {
+      "id": "9a1b99ec-3272-40e8-a824-37c5d5a5fed2",
+      "comment": "",
+      "command": "click",
+      "target": "id=editButton",
+      "targets": [
+        ["id=editButton", "id"],
+        ["css=#editButton", "css:finder"],
+        ["xpath=//button[@id='editButton']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Редактировать информацию о хранилище')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ab383ed-8fb5-4d9a-93fc-cc83ac4a565a",
+      "comment": "",
+      "command": "click",
+      "target": "id=storageFreeSpace",
+      "targets": [
+        ["id=storageFreeSpace", "id"],
+        ["name=storageFreeSpace", "name"],
+        ["css=#storageFreeSpace", "css:finder"],
+        ["xpath=//input[@id='storageFreeSpace']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a295d029-4aaf-4315-9ecd-dcf8b2301daf",
+      "comment": "",
+      "command": "type",
+      "target": "id=storageFreeSpace",
+      "targets": [
+        ["id=storageFreeSpace", "id"],
+        ["name=storageFreeSpace", "name"],
+        ["css=#storageFreeSpace", "css:finder"],
+        ["xpath=//input[@id='storageFreeSpace']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "99"
+    }, {
+      "id": "060b374a-2de7-47f5-9337-3c3dd6a5e086",
+      "comment": "",
+      "command": "click",
+      "target": "id=storageType",
+      "targets": [
+        ["id=storageType", "id"],
+        ["name=storageType", "name"],
+        ["css=#storageType", "css:finder"],
+        ["xpath=//input[@id='storageType']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7b3eb5f-e033-4fa4-b5f2-e84c459d4a47",
+      "comment": "",
+      "command": "type",
+      "target": "id=storageType",
+      "targets": [
+        ["id=storageType", "id"],
+        ["name=storageType", "name"],
+        ["css=#storageType", "css:finder"],
+        ["xpath=//input[@id='storageType']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "parking space"
+    }, {
+      "id": "216ed9d2-76ce-42f7-a261-64185d50724f",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4f36653-b480-4786-8e53-7404942c4406",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitButton",
+      "targets": [
+        ["id=submitButton", "id"],
+        ["css=#submitButton", "css:finder"],
+        ["xpath=//input[@id='submitButton']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8164b4a9-eab7-4b09-80ad-eca5a1f84b1f",
+      "comment": "",
+      "command": "click",
+      "target": "id=storageLink",
+      "targets": [
+        ["id=storageLink", "id"],
+        ["linkText=Состояние склада", "linkText"],
+        ["css=#storageLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Состояние склада')]", "xpath:link"],
+        ["xpath=//a[@id='storageLink']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'storages')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Состояние склада')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "89fca59e-6c2c-41cf-be13-d94e66debbdb",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) a > span",
+      "targets": [
+        ["css=tr:nth-child(4) a > span", "css:finder"],
+        ["xpath=//tr[4]/td/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b2ca4e3-f610-42f5-9e6d-5e7541d4c810",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(2)",
+      "targets": [
+        ["css=p:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='storageInfo']/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Тип хранилища: parking space')]", "xpath:innerText"]
+      ],
+      "value": "Тип хранилища: parking space"
+    }, {
+      "id": "76865f94-d765-47e2-b7a8-653eb4299f23",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(3)",
+      "targets": [
+        ["css=p:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='storageInfo']/p[2]", "xpath:idRelative"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Свободное место: 99')]", "xpath:innerText"]
+      ],
+      "value": "Свободное место: 99"
+    }, {
+      "id": "6c9447b1-65c0-4f99-88cf-cffc813ebd92",
+      "comment": "",
+      "command": "click",
+      "target": "id=deleteButton",
+      "targets": [
+        ["id=deleteButton", "id"],
+        ["css=#deleteButton", "css:finder"],
+        ["xpath=//button[@id='deleteButton']", "xpath:attributes"],
+        ["xpath=//form[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Удалить хранилище из базы')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "24605ba1-fc27-4f8c-ab20-14d95ee95e4e",
+      "comment": "",
+      "command": "click",
+      "target": "name=storageType",
+      "targets": [
+        ["name=storageType", "name"],
+        ["css=.col:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='storageType']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0bd728b1-3bf9-4c64-a8f0-4c4b3d4943b5",
+      "comment": "",
+      "command": "type",
+      "target": "name=storageType",
+      "targets": [
+        ["name=storageType", "name"],
+        ["css=.col:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='storageType']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "parking lot"
+    }, {
+      "id": "68460b52-f848-45e3-83e1-0b8ca4401c15",
+      "comment": "",
+      "command": "click",
+      "target": "name=storageSpaceLo",
+      "targets": [
+        ["name=storageSpaceLo", "name"],
+        ["css=.col:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='storageSpaceLo']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "12e33e3c-b225-4e65-9741-555d93536b62",
+      "comment": "",
+      "command": "type",
+      "target": "name=storageSpaceLo",
+      "targets": [
+        ["name=storageSpaceLo", "name"],
+        ["css=.col:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='storageSpaceLo']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "99"
+    }, {
+      "id": "f774c1f4-dd4b-433a-8667-966e7db3dcf4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col > .btn",
+      "targets": [
+        ["css=.col > .btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Поиск')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "10cc2a23-6393-4cfe-af5a-a56b4adacf41",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Необходимо добавить",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d8227f38-b19b-451b-a2aa-1c9f784a80b7",
+    "name": "ordersSelenium",
+    "commands": [{
+      "id": "7715856e-85ed-41cc-ac33-b49c0dc5f440",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79194f82-df17-4547-a827-7e2d6fedb597",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x954",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85c80133-ea96-4376-a9ca-9f760114a405",
+      "comment": "",
+      "command": "click",
+      "target": "id=deliveriesLink",
+      "targets": [
+        ["id=deliveriesLink", "id"],
+        ["linkText=Заказы", "linkText"],
+        ["css=#deliveriesLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Заказы')]", "xpath:link"],
+        ["xpath=//a[@id='deliveriesLink']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'orders')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Заказы')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e9a500f-5b0a-4f7f-901a-79f3788bffed",
+      "comment": "",
+      "command": "click",
+      "target": "id=addOrderButton",
+      "targets": [
+        ["id=addOrderButton", "id"],
+        ["css=#addOrderButton", "css:finder"],
+        ["xpath=//button[@id='addOrderButton']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Оформить доставку')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a2860ed-fc33-4760-92a1-5a0d668814a2",
+      "comment": "",
+      "command": "click",
+      "target": "id=orderId",
+      "targets": [
+        ["id=orderId", "id"],
+        ["name=orderId", "name"],
+        ["css=#orderId", "css:finder"],
+        ["xpath=//input[@id='orderId']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81cc6332-b84f-4694-8de8-042ee2f84446",
+      "comment": "",
+      "command": "type",
+      "target": "id=orderId",
+      "targets": [
+        ["id=orderId", "id"],
+        ["name=orderId", "name"],
+        ["css=#orderId", "css:finder"],
+        ["xpath=//input[@id='orderId']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "120"
+    }, {
+      "id": "5bab62af-5976-4943-892a-0c3cf94668f0",
+      "comment": "",
+      "command": "click",
+      "target": "id=orderDateTime",
+      "targets": [
+        ["id=orderDateTime", "id"],
+        ["name=orderDateTime", "name"],
+        ["css=#orderDateTime", "css:finder"],
+        ["xpath=//input[@id='orderDateTime']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5087e50-7086-436d-9d5f-a7b995047bfd",
+      "comment": "",
+      "command": "type",
+      "target": "id=orderDateTime",
+      "targets": [
+        ["id=orderDateTime", "id"],
+        ["name=orderDateTime", "name"],
+        ["css=#orderDateTime", "css:finder"],
+        ["xpath=//input[@id='orderDateTime']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "2023-09-20"
+    }, {
+      "id": "3799d3fe-087a-46af-baba-b4094f0d1a70",
+      "comment": "",
+      "command": "click",
+      "target": "id=orderBuyerName",
+      "targets": [
+        ["id=orderBuyerName", "id"],
+        ["name=orderBuyerName", "name"],
+        ["css=#orderBuyerName", "css:finder"],
+        ["xpath=//input[@id='orderBuyerName']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2074f589-5960-452e-8557-e75c770131fb",
+      "comment": "",
+      "command": "type",
+      "target": "id=orderBuyerName",
+      "targets": [
+        ["id=orderBuyerName", "id"],
+        ["name=orderBuyerName", "name"],
+        ["css=#orderBuyerName", "css:finder"],
+        ["xpath=//input[@id='orderBuyerName']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "A potato consumer"
+    }, {
+      "id": "ee76a93a-1446-466f-8e4b-fba5d40a6898",
+      "comment": "",
+      "command": "click",
+      "target": "id=orderProductName",
+      "targets": [
+        ["id=orderProductName", "id"],
+        ["name=orderProductName", "name"],
+        ["css=#orderProductName", "css:finder"],
+        ["xpath=//input[@id='orderProductName']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "14ed4ccd-402b-408a-ad22-cb7cdca8639f",
+      "comment": "",
+      "command": "type",
+      "target": "id=orderProductName",
+      "targets": [
+        ["id=orderProductName", "id"],
+        ["name=orderProductName", "name"],
+        ["css=#orderProductName", "css:finder"],
+        ["xpath=//input[@id='orderProductName']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "Potatoes"
+    }, {
+      "id": "e9e0345e-a841-4727-842c-420e0eefc68f",
+      "comment": "",
+      "command": "click",
+      "target": "id=orderAmount",
+      "targets": [
+        ["id=orderAmount", "id"],
+        ["name=orderAmount", "name"],
+        ["css=#orderAmount", "css:finder"],
+        ["xpath=//input[@id='orderAmount']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "06602b16-8b81-4966-95e4-01b3c9a1b629",
+      "comment": "",
+      "command": "type",
+      "target": "id=orderAmount",
+      "targets": [
+        ["id=orderAmount", "id"],
+        ["name=orderAmount", "name"],
+        ["css=#orderAmount", "css:finder"],
+        ["xpath=//input[@id='orderAmount']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "31"
+    }, {
+      "id": "6e215f1f-39f5-422b-8870-e48e7c023b50",
+      "comment": "",
+      "command": "click",
+      "target": "id=orderDeparted",
+      "targets": [
+        ["id=orderDeparted", "id"],
+        ["name=orderDeparted", "name"],
+        ["css=#orderDeparted", "css:finder"],
+        ["xpath=//input[@id='orderDeparted']", "xpath:attributes"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a4024fd-c8a3-408b-9019-7bd38dc3b2af",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitButton",
+      "targets": [
+        ["id=submitButton", "id"],
+        ["css=#submitButton", "css:finder"],
+        ["xpath=//input[@id='submitButton']", "xpath:attributes"],
+        ["xpath=//input[7]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e18e8ad5-d167-436e-a9d3-583a65799135",
+      "comment": "",
+      "command": "click",
+      "target": "id=deliveriesLink",
+      "targets": [
+        ["id=deliveriesLink", "id"],
+        ["linkText=Заказы", "linkText"],
+        ["css=#deliveriesLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Заказы')]", "xpath:link"],
+        ["xpath=//a[@id='deliveriesLink']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'orders')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Заказы')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "91fdf517-82b4-47e9-b1a5-eace4bf58fc5",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(5) a > span",
+      "targets": [
+        ["css=tr:nth-child(5) a > span", "css:finder"],
+        ["xpath=//tr[5]/td/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c23eb53-da5c-4198-ba19-04c4d19c7614",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(2)",
+      "targets": [
+        ["css=p:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='orderInfo']/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Имя покупателя: A potato consumer')]", "xpath:innerText"]
+      ],
+      "value": "Имя покупателя: A potato consumer"
+    }, {
+      "id": "82f1641a-3036-4e12-8e53-99c35a27ba3c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(4)",
+      "targets": [
+        ["css=p:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='orderInfo']/p[3]", "xpath:idRelative"],
+        ["xpath=//p[3]", "xpath:position"],
+        ["xpath=//p[contains(.,'Кол-во: 1.0')]", "xpath:innerText"]
+      ],
+      "value": "Кол-во: 31.0"
+    }, {
+      "id": "4a378910-f7a4-4c40-8dfc-de5dc8a59869",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h4",
+      "targets": [
+        ["css=h4", "css:finder"],
+        ["xpath=//div[@id='orderInfo']/h4", "xpath:idRelative"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'2020-07-01 00:00:00.0')]", "xpath:innerText"]
+      ],
+      "value": "2023-09-20 00:00:00.0"
+    }, {
+      "id": "53c5f376-631b-4bf0-8162-6ea293aff402",
+      "comment": "",
+      "command": "click",
+      "target": "id=editButton",
+      "targets": [
+        ["id=editButton", "id"],
+        ["css=#editButton", "css:finder"],
+        ["xpath=//button[@id='editButton']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Редактировать информацию о доставке')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "05a9530c-a742-4cf6-84a1-3d6700bedca8",
+      "comment": "",
+      "command": "click",
+      "target": "id=orderAmount",
+      "targets": [
+        ["id=orderAmount", "id"],
+        ["name=orderAmount", "name"],
+        ["css=#orderAmount", "css:finder"],
+        ["xpath=//input[@id='orderAmount']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26c9b1ed-5059-4e34-9fc3-c8d7e0ace62c",
+      "comment": "",
+      "command": "type",
+      "target": "id=orderAmount",
+      "targets": [
+        ["id=orderAmount", "id"],
+        ["name=orderAmount", "name"],
+        ["css=#orderAmount", "css:finder"],
+        ["xpath=//input[@id='orderAmount']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "32.0"
+    }, {
+      "id": "0350fc94-92e9-490a-8efe-c8db93471c39",
+      "comment": "",
+      "command": "click",
+      "target": "id=orderDateTime",
+      "targets": [
+        ["id=orderDateTime", "id"],
+        ["name=orderDateTime", "name"],
+        ["css=#orderDateTime", "css:finder"],
+        ["xpath=//input[@id='orderDateTime']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c110927-c018-4f15-b19a-e9572ac19a13",
+      "comment": "",
+      "command": "type",
+      "target": "id=orderDateTime",
+      "targets": [
+        ["id=orderDateTime", "id"],
+        ["name=orderDateTime", "name"],
+        ["css=#orderDateTime", "css:finder"],
+        ["xpath=//input[@id='orderDateTime']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "2023-09-20"
+    }, {
+      "id": "55784e3a-01e7-4bfd-af9a-2935f255793d",
+      "comment": "",
+      "command": "click",
+      "target": "css=form",
+      "targets": [
+        ["css=form", "css:finder"],
+        ["xpath=//form[@action='/saveOrder']", "xpath:attributes"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7028a739-6d1a-40e4-be9c-823558bef7ac",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitButton",
+      "targets": [
+        ["id=submitButton", "id"],
+        ["css=#submitButton", "css:finder"],
+        ["xpath=//input[@id='submitButton']", "xpath:attributes"],
+        ["xpath=//input[7]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3550a884-f5be-4c2e-8546-20039df14de3",
+      "comment": "",
+      "command": "click",
+      "target": "id=deliveriesLink",
+      "targets": [
+        ["id=deliveriesLink", "id"],
+        ["linkText=Заказы", "linkText"],
+        ["css=#deliveriesLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Заказы')]", "xpath:link"],
+        ["xpath=//a[@id='deliveriesLink']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'orders')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Заказы')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2ac394b-e99d-42e1-addc-af17f8617ec4",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(5) a > span",
+      "targets": [
+        ["css=tr:nth-child(5) a > span", "css:finder"],
+        ["xpath=//tr[5]/td/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c7425d0-82a8-487c-8b4e-38a7548b15fa",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h4",
+      "targets": [
+        ["css=h4", "css:finder"],
+        ["xpath=//div[@id='orderInfo']/h4", "xpath:idRelative"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'2020-07-01 00:00:00.0')]", "xpath:innerText"]
+      ],
+      "value": "2023-09-20 00:00:00.0"
+    }, {
+      "id": "e87f3c91-6f4f-4558-9dae-0f6b552b66a6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(4)",
+      "targets": [
+        ["css=p:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='orderInfo']/p[3]", "xpath:idRelative"],
+        ["xpath=//p[3]", "xpath:position"],
+        ["xpath=//p[contains(.,'Кол-во: 1.0')]", "xpath:innerText"]
+      ],
+      "value": "Кол-во: 32.0"
+    }, {
+      "id": "e821674c-4283-45b3-aa91-ab25b65458de",
+      "comment": "",
+      "command": "click",
+      "target": "id=deleteButton",
+      "targets": [
+        ["id=deleteButton", "id"],
+        ["css=#deleteButton", "css:finder"],
+        ["xpath=//button[@id='deleteButton']", "xpath:attributes"],
+        ["xpath=//form[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Удалить доставку из базы')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7aeefed3-cf10-4c0b-9076-85d41c2bdb5d",
+      "comment": "",
+      "command": "click",
+      "target": "name=dateLo",
+      "targets": [
+        ["name=dateLo", "name"],
+        ["css=.col:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='dateLo']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "96a08057-ff68-493c-950e-e66821c4abb2",
+      "comment": "",
+      "command": "type",
+      "target": "name=dateLo",
+      "targets": [
+        ["name=dateLo", "name"],
+        ["css=.col:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='dateLo']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "2023-09-01"
+    }, {
+      "id": "b0652193-70b6-4c14-aa3d-511bceabc26c",
+      "comment": "",
+      "command": "click",
+      "target": "name=dateHi",
+      "targets": [
+        ["name=dateHi", "name"],
+        ["css=.col:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='dateHi']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "22f9c7ca-46d5-4ec1-8342-83ec4b850511",
+      "comment": "",
+      "command": "type",
+      "target": "name=dateHi",
+      "targets": [
+        ["name=dateHi", "name"],
+        ["css=.col:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='dateHi']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "2023-09-30"
+    }, {
+      "id": "8a6fa550-6762-4459-b217-6fa0af02edc8",
+      "comment": "",
+      "command": "click",
+      "target": "name=amountLo",
+      "targets": [
+        ["name=amountLo", "name"],
+        ["css=.col:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='amountLo']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aeac492a-3f32-4ff4-92a4-1f048812b9a6",
+      "comment": "",
+      "command": "type",
+      "target": "name=amountLo",
+      "targets": [
+        ["name=amountLo", "name"],
+        ["css=.col:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='amountLo']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "83427b3d-bb51-4405-8935-e7f61c6011f8",
+      "comment": "",
+      "command": "click",
+      "target": "name=amountHi",
+      "targets": [
+        ["name=amountHi", "name"],
+        ["css=.col:nth-child(4) > .form-control", "css:finder"],
+        ["xpath=//input[@name='amountHi']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "646217f6-0082-4c8a-9fc8-9d8690b32483",
+      "comment": "",
+      "command": "type",
+      "target": "name=amountHi",
+      "targets": [
+        ["name=amountHi", "name"],
+        ["css=.col:nth-child(4) > .form-control", "css:finder"],
+        ["xpath=//input[@name='amountHi']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "100"
+    }, {
+      "id": "86f6181a-c127-439c-b830-af2456b25348",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col > .btn",
+      "targets": [
+        ["css=.col > .btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Поиск')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6772893-1146-4c76-802d-29f8e1cb78a3",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Необходимо добавить",
+      "targets": [
+        ["linkText=Необходимо добавить", "linkText"],
+        ["css=td > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Необходимо добавить')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/editOrder')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Необходимо добавить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "77559f08-9d5b-4e10-b8fd-c219474520df",
+    "name": "supplySelenium",
+    "commands": [{
+      "id": "48573cfd-6b86-4739-a4f2-e2b13f187460",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc06b825-776a-4e36-ad50-02bb68242625",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1728x1079",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "62197205-baf5-4cab-bd35-7deef78fc1a7",
+      "comment": "",
+      "command": "click",
+      "target": "id=suppliesLink",
+      "targets": [
+        ["id=suppliesLink", "id"],
+        ["linkText=Поставки", "linkText"],
+        ["css=#suppliesLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Поставки')]", "xpath:link"],
+        ["xpath=//a[@id='suppliesLink']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'supplies')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Поставки')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "22dc1253-f009-482c-8071-de664073e824",
+      "comment": "",
+      "command": "click",
+      "target": "id=addSupplyButton",
+      "targets": [
+        ["id=addSupplyButton", "id"],
+        ["css=#addSupplyButton", "css:finder"],
+        ["xpath=//button[@id='addSupplyButton']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Оформить поставку')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc9258fc-604b-4226-b3ad-4152679aa2e1",
+      "comment": "",
+      "command": "click",
+      "target": "id=supplyDateTime",
+      "targets": [
+        ["id=supplyDateTime", "id"],
+        ["name=supplyDateTime", "name"],
+        ["css=#supplyDateTime", "css:finder"],
+        ["xpath=//input[@id='supplyDateTime']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f11b850-6f9f-4ffe-a079-1f802fed52af",
+      "comment": "",
+      "command": "type",
+      "target": "id=supplyDateTime",
+      "targets": [
+        ["id=supplyDateTime", "id"],
+        ["name=supplyDateTime", "name"],
+        ["css=#supplyDateTime", "css:finder"],
+        ["xpath=//input[@id='supplyDateTime']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "2023-09-20"
+    }, {
+      "id": "7f5daa80-65cc-4aa5-8466-e0e5f7a600db",
+      "comment": "",
+      "command": "click",
+      "target": "id=supplySellerName",
+      "targets": [
+        ["id=supplySellerName", "id"],
+        ["name=supplySellerName", "name"],
+        ["css=#supplySellerName", "css:finder"],
+        ["xpath=//input[@id='supplySellerName']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "73bc89ac-d5f1-4fd6-9824-609641540979",
+      "comment": "",
+      "command": "type",
+      "target": "id=supplySellerName",
+      "targets": [
+        ["id=supplySellerName", "id"],
+        ["name=supplySellerName", "name"],
+        ["css=#supplySellerName", "css:finder"],
+        ["xpath=//input[@id='supplySellerName']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "Food source"
+    }, {
+      "id": "61c1c6ee-76a3-42cc-affd-b4fa24c0ea9e",
+      "comment": "",
+      "command": "click",
+      "target": "id=supplyProductName",
+      "targets": [
+        ["id=supplyProductName", "id"],
+        ["name=supplyProductName", "name"],
+        ["css=#supplyProductName", "css:finder"],
+        ["xpath=//input[@id='supplyProductName']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "235abec7-2823-428a-8e38-0ebb0b127905",
+      "comment": "",
+      "command": "type",
+      "target": "id=supplyProductName",
+      "targets": [
+        ["id=supplyProductName", "id"],
+        ["name=supplyProductName", "name"],
+        ["css=#supplyProductName", "css:finder"],
+        ["xpath=//input[@id='supplyProductName']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "T-Short"
+    }, {
+      "id": "a20efc33-fa93-4f50-a9e7-3316ffd94901",
+      "comment": "",
+      "command": "click",
+      "target": "id=supplyAmount",
+      "targets": [
+        ["id=supplyAmount", "id"],
+        ["name=supplyAmount", "name"],
+        ["css=#supplyAmount", "css:finder"],
+        ["xpath=//input[@id='supplyAmount']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8909b8ed-b5aa-48ac-9401-f00056c6a704",
+      "comment": "",
+      "command": "type",
+      "target": "id=supplyAmount",
+      "targets": [
+        ["id=supplyAmount", "id"],
+        ["name=supplyAmount", "name"],
+        ["css=#supplyAmount", "css:finder"],
+        ["xpath=//input[@id='supplyAmount']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "31"
+    }, {
+      "id": "b91da097-a95b-473f-98bc-ff4bd21e0efe",
+      "comment": "",
+      "command": "click",
+      "target": "id=supplyArrived",
+      "targets": [
+        ["id=supplyArrived", "id"],
+        ["name=supplyArrived", "name"],
+        ["css=#supplyArrived", "css:finder"],
+        ["xpath=//input[@id='supplyArrived']", "xpath:attributes"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "967c46ca-2aff-45ef-9c77-bc18bd1a5fda",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitButton",
+      "targets": [
+        ["id=submitButton", "id"],
+        ["css=#submitButton", "css:finder"],
+        ["xpath=//input[@id='submitButton']", "xpath:attributes"],
+        ["xpath=//input[7]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44ede5f5-0db6-4e6e-bc5d-4409b88d5bc3",
+      "comment": "",
+      "command": "click",
+      "target": "id=suppliesLink",
+      "targets": [
+        ["id=suppliesLink", "id"],
+        ["linkText=Поставки", "linkText"],
+        ["css=#suppliesLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Поставки')]", "xpath:link"],
+        ["xpath=//a[@id='suppliesLink']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'supplies')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Поставки')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c28ce7f-2975-483a-ba77-bb5efe0b9544",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(9) > td:nth-child(1) span",
+      "targets": [
+        ["css=tr:nth-child(9) > td:nth-child(1) span", "css:finder"],
+        ["xpath=//tr[9]/td/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ac66a93-74cf-4fa8-87a3-d133fdc2e767",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(4)",
+      "targets": [
+        ["css=p:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='supplyInfo']/p[3]", "xpath:idRelative"],
+        ["xpath=//p[3]", "xpath:position"],
+        ["xpath=//p[contains(.,'Кол-во: 10.0')]", "xpath:innerText"]
+      ],
+      "value": "Кол-во: 31.0"
+    }, {
+      "id": "20dbc961-3303-4267-a0fe-16c306170c1f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(3)",
+      "targets": [
+        ["css=p:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='supplyInfo']/p[2]", "xpath:idRelative"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Продукты в поставке: Lemon juice (1 liter)')]", "xpath:innerText"]
+      ],
+      "value": "Продукты в поставке: T-Short"
+    }, {
+      "id": "48978a6d-6c30-4b2e-b358-c0dff9a651c4",
+      "comment": "",
+      "command": "click",
+      "target": "id=editButton",
+      "targets": [
+        ["id=editButton", "id"],
+        ["css=#editButton", "css:finder"],
+        ["xpath=//button[@id='editButton']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Редактировать информацию о поставке')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "096c61f4-b5c0-4db2-bd3e-25545b944a13",
+      "comment": "",
+      "command": "click",
+      "target": "id=supplyAmount",
+      "targets": [
+        ["id=supplyAmount", "id"],
+        ["name=supplyAmount", "name"],
+        ["css=#supplyAmount", "css:finder"],
+        ["xpath=//input[@id='supplyAmount']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e8c7be0-a7af-4d8a-bcb7-7321cf9100cf",
+      "comment": "",
+      "command": "type",
+      "target": "id=supplyAmount",
+      "targets": [
+        ["id=supplyAmount", "id"],
+        ["name=supplyAmount", "name"],
+        ["css=#supplyAmount", "css:finder"],
+        ["xpath=//input[@id='supplyAmount']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "32.0"
+    }, {
+      "id": "cc5e4537-73f8-4b30-9708-1319bb789efe",
+      "comment": "",
+      "command": "click",
+      "target": "id=supplyDateTime",
+      "targets": [
+        ["id=supplyDateTime", "id"],
+        ["name=supplyDateTime", "name"],
+        ["css=#supplyDateTime", "css:finder"],
+        ["xpath=//input[@id='supplyDateTime']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8605ac20-243c-41b8-b68f-617a0d935ff8",
+      "comment": "",
+      "command": "type",
+      "target": "id=supplyDateTime",
+      "targets": [
+        ["id=supplyDateTime", "id"],
+        ["name=supplyDateTime", "name"],
+        ["css=#supplyDateTime", "css:finder"],
+        ["xpath=//input[@id='supplyDateTime']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "2023-09-20"
+    }, {
+      "id": "acfc8899-e6c7-4f59-8372-a4eb4129115c",
+      "comment": "",
+      "command": "click",
+      "target": "css=form",
+      "targets": [
+        ["css=form", "css:finder"],
+        ["xpath=//form[@action='/saveSupply']", "xpath:attributes"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "90ba4d41-6284-4abb-a06e-9d0a4e4eabcd",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitButton",
+      "targets": [
+        ["id=submitButton", "id"],
+        ["css=#submitButton", "css:finder"],
+        ["xpath=//input[@id='submitButton']", "xpath:attributes"],
+        ["xpath=//input[7]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df4325a5-e5fe-4c29-a5a6-629d7d527068",
+      "comment": "",
+      "command": "click",
+      "target": "id=suppliesLink",
+      "targets": [
+        ["id=suppliesLink", "id"],
+        ["linkText=Поставки", "linkText"],
+        ["css=#suppliesLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Поставки')]", "xpath:link"],
+        ["xpath=//a[@id='suppliesLink']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'supplies')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Поставки')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a30c973c-38ca-4067-9dfa-4493800cbff8",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(9) > td:nth-child(1) span",
+      "targets": [
+        ["css=tr:nth-child(9) > td:nth-child(1) span", "css:finder"],
+        ["xpath=//tr[9]/td/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f18b5e4-3549-43c7-913a-60c1f5a78dc5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(4)",
+      "targets": [
+        ["css=p:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='supplyInfo']/p[3]", "xpath:idRelative"],
+        ["xpath=//p[3]", "xpath:position"],
+        ["xpath=//p[contains(.,'Кол-во: 10.0')]", "xpath:innerText"]
+      ],
+      "value": "Кол-во: 32.0"
+    }, {
+      "id": "609f8c0e-aace-4c3a-b88e-6ca49cabef4b",
+      "comment": "",
+      "command": "click",
+      "target": "id=deleteButton",
+      "targets": [
+        ["id=deleteButton", "id"],
+        ["css=#deleteButton", "css:finder"],
+        ["xpath=//button[@id='deleteButton']", "xpath:attributes"],
+        ["xpath=//form[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Удалить поставку из базы')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "37f93619-8ee6-47f1-9223-dcb1b548fdd2",
+      "comment": "",
+      "command": "click",
+      "target": "name=sellerName",
+      "targets": [
+        ["name=sellerName", "name"],
+        ["css=.col:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='sellerName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6adfbcaa-ae52-4e59-aead-f3e9b0a22cb3",
+      "comment": "",
+      "command": "type",
+      "target": "name=sellerName",
+      "targets": [
+        ["name=sellerName", "name"],
+        ["css=.col:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='sellerName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Food source"
+    }, {
+      "id": "014a4962-e0c4-4e5d-9ecf-60c6a9cde472",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col > .btn",
+      "targets": [
+        ["css=.col > .btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[7]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Поиск')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "49928bad-bc05-4a16-a1d6-1045ce643ada",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=tr:nth-child(1) > td:nth-child(1)",
+      "targets": [
+        ["css=tr:nth-child(1) > td:nth-child(1)", "css:finder"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'101')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ffda580-df1e-4f21-b6b7-01a2e712403f",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=tr:nth-child(2) > td:nth-child(1) span",
+      "targets": [
+        ["css=tr:nth-child(2) > td:nth-child(1) span", "css:finder"],
+        ["xpath=//tr[2]/td/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'102')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "89cf35fc-6411-4be5-90af-f4e4435edc29",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=tr:nth-child(3) > td:nth-child(1) span",
+      "targets": [
+        ["css=tr:nth-child(3) > td:nth-child(1) span", "css:finder"],
+        ["xpath=//tr[3]/td/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'103')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c7796a4-f04d-45f0-b4a3-e9086a6d5e2a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=tr:nth-child(4) > td:nth-child(1) span",
+      "targets": [
+        ["css=tr:nth-child(4) > td:nth-child(1) span", "css:finder"],
+        ["xpath=//tr[4]/td/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4126b35-200a-45ec-b325-f29b31eaadd9",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=tr:nth-child(5) > td:nth-child(1) span",
+      "targets": [
+        ["css=tr:nth-child(4) > td:nth-child(1) span", "css:finder"],
+        ["xpath=//tr[4]/td/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6588ad5f-11a7-44b5-a19e-a6bb92423e24",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.indent",
+      "targets": [
+        ["css=.indent", "css:finder"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "13dd1084-a651-443b-ba94-7d17ac36199e",
+    "name": "goodSelenium",
+    "commands": [{
+      "id": "68250611-7cfc-4ad9-9d45-ab57f766ff3f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2961900f-3c19-44ad-b573-b98decf61529",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1728x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5967c05d-47d4-43f8-b856-7932505f288a",
+      "comment": "",
+      "command": "click",
+      "target": "id=goodsLink",
+      "targets": [
+        ["id=goodsLink", "id"],
+        ["linkText=Товары", "linkText"],
+        ["css=#goodsLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Товары')]", "xpath:link"],
+        ["xpath=//a[@id='goodsLink']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'goods')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Товары')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8fb1d11-b870-4336-9bbc-98723bba71e1",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Товары",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d2134d1e-2c70-496f-815f-2aeef29c3a1b",
+      "comment": "",
+      "command": "click",
+      "target": "name=goodProductName",
+      "targets": [
+        ["name=goodProductName", "name"],
+        ["css=.col:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='goodProductName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e64cf5d-f2d5-4123-8888-fd1b37faa34f",
+      "comment": "",
+      "command": "type",
+      "target": "name=goodProductName",
+      "targets": [
+        ["name=goodProductName", "name"],
+        ["css=.col:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='goodProductName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Lemon juice (1 liter)"
+    }, {
+      "id": "a9fcde23-1dfd-4a92-a0f3-eeb3f76e8c3e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col > .btn",
+      "targets": [
+        ["css=.col > .btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[10]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Поиск')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6206b1b-9c51-45cc-84b8-540f2f719fcc",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=a > span",
+      "targets": [
+        ["css=a > span", "css:finder"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Lemon juice (1 liter)')]", "xpath:innerText"]
+      ],
+      "value": "Lemon juice (1 liter)"
+    }]
+  }],
+  "suites": [{
+    "id": "e58a33ed-f781-4369-b135-f674b6d2ff38",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["38a7e055-2b97-4123-a36d-0d0c807b0d72"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}
